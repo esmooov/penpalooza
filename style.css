@@ -1,0 +1,98 @@
+a:visited{
+    color: rgba(0,2,86,0.9);
+}
+body {
+    background-color: rgba(247,242,225,1);
+    border-image: url('/cheesy-border.png') round;
+    border-image-slice: 177 190 fill;
+    padding:0;
+    border-image-width: 80px 87px;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.page{
+    box-sizing: border-box;
+    padding: 40px 80px;
+    height: 100%;
+    width: 100%;
+}
+h1 {
+  font-family: phoreuscherokee, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 160px;
+  margin-top: 0;
+}
+.copy, .faq {
+    font-size: 28px;
+    font-family: harfang-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.faq {
+    max-width: 1000px;
+}
+.faq p{
+    margin-bottom: 60px;
+}
+.copy{
+    border: 4px solid rgba(0,0,0,0.9);
+    color: rgba(0,0,0,0.9);
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 30vw;
+    margin-right:5vw;
+}
+
+@media screen and (max-width: 1280px) {
+    .copy{
+        margin-right: 0vw;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .copy{
+        margin-left: 0vw;
+    }
+}
+@media screen and (max-width: 870px) {
+    h1 {
+        font-size: 120px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        border-image-width: 80px 0 0 87px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    .page{
+        padding: 60px 70px;
+    }
+    .copy, .faq{
+        border: none;
+        font-size: 26px;
+        text-align: justify;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 16vw;
+    }
+    .page{
+        padding: 50px 30px 50px 60px;
+    }
+    .copy{
+        font-size: 24px;
+    }
+    .faq {
+        font-size: 24px;
+    }
+}
