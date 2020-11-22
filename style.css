@@ -7,11 +7,12 @@ body {
     border-image-slice: 177 190 fill;
     padding:0;
     border-image-width: 80px 87px;
-    min-width: 100vw;
+    min-width: 99.5vw;
     min-height: 100vh;
     height: 100%;
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 .page{
     box-sizing: border-box;
